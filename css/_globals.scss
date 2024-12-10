@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { font-size: 100%;}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: $stone-100;
+  font-family: $bodyFont;
+  font-size: $font-size-xsm;
+  color: $stone-600;
+
+  @include breakpoint-up(large){
+    font-size: $font-size-sm;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+h1, h2 {
+  font-family: $headingFont;
+}
+
+.mb {
+  margin-bottom: 30px;
+}

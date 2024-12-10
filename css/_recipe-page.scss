@@ -1,0 +1,138 @@
+.recipe-container {
+  background-color: $white;
+
+  @include breakpoint-up(large) {
+    width: 45.625rem;
+    border-radius: 1.25rem;
+    margin: $margin-xxlg 0; 
+    padding: $padding-xlg;                
+  }
+
+  img {
+    height: 10.625rem;
+
+    @include breakpoint-up(medium) {
+      height: 18.75rem;
+    }
+
+    @include breakpoint-up(large) {
+      border-radius: 0.625rem;
+      margin-bottom: $margin-xlg;
+    }
+  }
+
+  .recipe-content {
+    padding: $padding-xlg $padding-lg;
+
+    @include breakpoint-up(large) {
+      padding: 0;
+    }
+  }
+
+  .main-title {
+    font-size: $font-size-lg;
+    color: $stone-900;
+    font-weight: $font-weight-md;
+    margin-bottom: $margin-sm;
+    line-height: 1.2;
+  }
+
+  .main-description {
+    line-height: 1.35;
+    margin-bottom: $margin-lg;
+  }
+
+  .preparation {
+    width: 100%;
+    background-color: $rose-50;
+    padding: $padding-md 0 $padding-md $padding-sm;
+    border-radius: 0.625rem;
+    .prep-title {
+      color: $rose-800;
+      font-size: $font-size-sm;
+      margin-bottom: $margin-xsm;
+    }
+  }
+
+  ul {
+    list-style-position: outside;
+    padding-left: $padding-sm;
+
+    li {
+      padding-left: $padding-sm;
+    }
+
+    li:not(:last-child) {
+      padding-bottom: $padding-xsm;
+    }
+
+    li::marker {
+      color: $rose-800;
+      font-size: $font-size-xsm;
+    }
+  }
+
+  ol {
+    list-style-position: outside;
+    padding-left: $padding-sm;
+
+    li {
+      padding-left: $padding-xxsm;
+    }
+
+    li:not(:last-child) {
+      padding-bottom: $padding-xsm;
+    }
+
+    li::marker {
+      color: $brown-800;
+      font-weight: $font-weight-lg;
+    }
+  }
+
+  .ingredients {
+    ul {
+      li::marker {
+        color: $brown-800;
+      }
+    }
+  }
+
+  .label {
+    font-weight: $font-weight-md;
+    color: $stone-900;
+  }
+
+  .recipe-title {
+    font-size: $font-size-md;
+    color: $brown-800;
+    margin-bottom: 24px;
+  }
+
+  .recipe-list {
+    padding-bottom: $padding-lg;
+    border-bottom: 1px solid $stone-150;
+  }
+
+  .nutrition-list {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      padding-left: $padding-lg;
+      padding-bottom: $padding-xsm;
+      border-bottom: 1px solid $stone-150;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    li:not(:first-child) {
+      padding-top: $padding-xsm;
+    }
+  }
+
+  .nutr-value {
+    color: $brown-800;
+    font-weight: $font-weight-lg;
+  }
+
+}
