@@ -75,9 +75,9 @@ h1, h2 {
   }
 }
 .recipe-container .main-title {
-  font-size: 1.75rem;
+  font-size: 32px;
   color: hsl(24, 5%, 18%);
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
@@ -108,21 +108,21 @@ h1, h2 {
 }
 .recipe-container ul li::marker {
   color: hsl(332, 51%, 32%);
-  font-size: 0.875rem;
+  font-size: 0.625rem;
 }
 .recipe-container ol {
   list-style-position: outside;
   padding-left: 1.25rem;
 }
 .recipe-container ol li {
-  padding-left: 0.625rem;
+  padding-left: 1rem;
 }
 .recipe-container ol li:not(:last-child) {
   padding-bottom: 1rem;
 }
 .recipe-container ol li::marker {
   color: hsl(14, 45%, 36%);
-  font-weight: 700;
+  font-weight: 600;
 }
 .recipe-container .ingredients ul li::marker {
   color: hsl(14, 45%, 36%);
@@ -132,7 +132,8 @@ h1, h2 {
   color: hsl(24, 5%, 18%);
 }
 .recipe-container .recipe-title {
-  font-size: 1.375rem;
+  font-size: 1.5rem;
+  font-weight: 400;
   color: hsl(14, 45%, 36%);
   margin-bottom: 24px;
 }
@@ -146,13 +147,15 @@ h1, h2 {
 }
 .recipe-container .nutrition-list li {
   padding-left: 1.875rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid hsl(30, 18%, 87%);
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .recipe-container .nutrition-list li:not(:first-child) {
   padding-top: 1rem;
+}
+.recipe-container .nutrition-list li:not(:last-child) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 .recipe-container .nutr-value {
   color: hsl(14, 45%, 36%);
